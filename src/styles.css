@@ -4,3 +4,9 @@ body{
     font-weight: 100;
     font-style: normal;
 }
+
+/* CSS used almost in every component */
+.font-l{
+    font-size: x-large;
+    font-weight: lighter;
+}

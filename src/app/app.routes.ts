@@ -3,6 +3,7 @@ import { ShopsComponent } from './shops/shops.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ShopCategoryComponent } from './shop-category/shop-category.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path:'Contact',
         component: ContactComponent
+    },
+    {
+        path:'ShopCategory',
+        component: ShopCategoryComponent
     }
 ];
