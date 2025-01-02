@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>SNo</th>
+                <th>ID Proof</th>
+                <th>Number Length</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(item of IDProof; track $index){
+                <tr>
+                    <td>{{$index +1}}</td>
+                    <td>{{item.idproof}}</td>
+                    <td>{{item.idnumberLength}}</td>
+                    <td>
+                        <button class="btn btn-primary mx-2">Edit</button>
+                        <button class="btn btn-danger mx-2">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>    
+</div>
