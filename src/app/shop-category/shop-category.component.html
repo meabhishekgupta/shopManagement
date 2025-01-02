@@ -1,4 +1,22 @@
 <div class="container">
-    <button class="btn btn-success" (click)="getShopCategories()">Get Shop Categories</button>
-    {{shopCategories | json}}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>SNo</th>
+                <th>Shop Category</th>
+                <th>Created By</th>
+                <th>Created Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(item of shopCategories; track $index){
+                <tr>
+                    <td>{{$index + 1}}</td>
+                    <td>{{item.shopCategory}}</td>
+                    <td>{{item.createdBy}}</td>
+                    <td>{{item.createdDate}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
