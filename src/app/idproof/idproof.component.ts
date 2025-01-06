@@ -19,6 +19,7 @@ export class IDProofComponent {
   }
 
   GetIDProof(){
+    debugger;
     this.http.get("https://localhost:7007/api/IDProof").subscribe((result: any)=>{
       this.IDProof = result;
     })
